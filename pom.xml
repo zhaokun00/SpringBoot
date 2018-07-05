@@ -8,6 +8,7 @@
     <artifactId>SpringBoot</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <!-- springboot的相关依赖-->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -21,4 +22,13 @@
         </dependency>
     </dependencies>
 
+    <build>
+        <plugins>
+            <!--简化部署,这个插件可以将应用打包成一个可执行的jar包-->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 </project>
