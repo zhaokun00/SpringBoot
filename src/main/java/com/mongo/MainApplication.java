@@ -4,7 +4,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /*
-* @SpringBootApplication用来标注一个主程序类,说明这是一个SpringBoot的应用
+* @SpringBootApplication用来标注一个主程序类(作用到类上),说明这是一个SpringBoot的应用
+*
 * */
 @SpringBootApplication
 public class MainApplication {
