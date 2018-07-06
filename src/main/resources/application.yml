@@ -1,0 +1,31 @@
+#server:
+# port: 8082
+
+student:
+ lastName: zhaokun
+ age: 30
+ boss: true
+
+teacher:
+ lastName: zhaokun
+ age: 30
+ boss: true
+# last-name: zhaokun
+
+doctor:
+ lastName: zhaokun
+ age: 30
+ sex: 1
+ list:
+  - beijing
+  - shanghai
+  - tianjing
+ map: {k1: v1,k2: v2}
+ dog:
+  name: wangcai
+  age: 1
+
+spring:
+ profiles:
+   active: pro
+

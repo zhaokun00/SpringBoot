@@ -1,0 +1,4 @@
+1.resource文件夹目录结构
+    -static:保存所有的静态资源:例如js、css、images等
+    -templates:保存所有的模板页面(springboot默认jar包使用嵌入式Tomcat,默认不支持jsp页面,因此需要使用模板引擎(freemarker、thymeleaf))
+    -application.properties:Spring Boot应用的配置文件,可以在该配置文件中修改一些默认设置
