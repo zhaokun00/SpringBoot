@@ -4,8 +4,8 @@ import com.mongo.service.HelloConfigService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 /*
-* @Confiuration注解与@Bean注解
-*  @Confiuration标注在类上,相当于把该类作为spring的xml配置文件中的<beans>,作用为:配置spring容器(应用上下文)
+* @Configration注解与@Bean注解
+*  @Configuration标注在类上,相当于把该类作为spring的xml配置文件中的<beans>,作用为:配置spring容器(应用上下文)
 *
 *  示例:
 *  //用@Configuration来标注一个类

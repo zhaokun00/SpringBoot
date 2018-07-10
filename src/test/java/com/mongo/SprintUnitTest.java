@@ -1,6 +1,7 @@
 package com.mongo;
 
 import com.mongo.bean.Doctor;
+import com.mongo.bean.Farmer;
 import com.mongo.bean.Student;
 import com.mongo.bean.Teacher;
 import org.junit.Test;
@@ -30,6 +31,9 @@ public class SprintUnitTest {
     @Autowired
     ApplicationContext context;
 
+    @Autowired
+    Farmer farmer;
+
     @Test
     public void testStudent() {
         System.out.println(student);
@@ -49,5 +53,11 @@ public class SprintUnitTest {
     public void testConfig() {
         Boolean result = context.containsBean("helloConfigService2");
         System.out.println("result = " + result);
+    }
+
+    @Test
+    public void testFarmer() {
+
+        System.out.println(farmer);
     }
 }
