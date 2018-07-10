@@ -2,6 +2,7 @@ package com.mongo.controller;
 
 import com.mongo.bean.Student;
 import com.mongo.bean.Teacher;
+import com.mongo.service.HelloConfigService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
@@ -64,5 +65,20 @@ public class ConfigController {
         System.out.println(s.toString());
 
         return s;
+    }
+
+    @Autowired
+    private HelloConfigService helloConfigService;
+
+    @RequestMapping("/helloConfigService")
+    public String helloConfigService() {
+
+        if(helloConfigService != null) {
+            helloConfigService.printf();
+        }
+        else {
+            System.out.println("helloConfigService is null");
+        }
+        return "helloConfigService";
     }
 }

@@ -1,5 +1,5 @@
 #server:
-# port: 8082
+# port: 8084
 
 student:
  lastName: zhaokun
@@ -25,7 +25,7 @@ doctor:
   name: wangcai
   age: 1
 
-spring:
- profiles:
-   active: pro
+#spring:
+# profiles:
+#   active: pro
 

@@ -7,6 +7,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.ApplicationContext;
 import org.springframework.test.context.junit4.SpringRunner;
 
 /*
@@ -26,6 +27,9 @@ public class SprintUnitTest {
     @Autowired
     Doctor doctor;
 
+    @Autowired
+    ApplicationContext context;
+
     @Test
     public void testStudent() {
         System.out.println(student);
@@ -39,5 +43,11 @@ public class SprintUnitTest {
     @Test
     public void testDoctor() {
         System.out.println(doctor);
+    }
+
+    @Test
+    public void testConfig() {
+        Boolean result = context.containsBean("helloConfigService2");
+        System.out.println("result = " + result);
     }
 }
