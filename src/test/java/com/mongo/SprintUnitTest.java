@@ -4,8 +4,11 @@ import com.mongo.bean.Doctor;
 import com.mongo.bean.Farmer;
 import com.mongo.bean.Student;
 import com.mongo.bean.Teacher;
+import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContext;
@@ -17,6 +20,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 * */
 @RunWith(SpringRunner.class)
 @SpringBootTest
+@Slf4j
 public class SprintUnitTest {
 
     @Autowired
@@ -59,5 +63,18 @@ public class SprintUnitTest {
     public void testFarmer() {
 
         System.out.println(farmer);
+    }
+
+    @Test
+    public void testPrintf() {
+
+        Logger logger = LoggerFactory.getLogger(getClass());
+
+        logger.info("infor信息1");
+    }
+
+    @Test
+    public void testSlf() {
+        log.info("infor信息1");
     }
 }
